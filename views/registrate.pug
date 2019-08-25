@@ -13,25 +13,23 @@ block content
                 .container
                 center
                     font(face='Gill Sans Ultra Bold')
-                        h1 HOLA, BIENVENIDO A XBOX 360!
-                        p Esta es una pagina wed donde puedes ver todos los juegos que te ofrecemos...
-                        p
+                        h1 REGISTRATE!
             .container
                 form(role='form')
                     .row
                         .col-xs-6.col-sm-6.col-md-6
                             .form-group
-                                input#first_name.form-control.input-sm(type='text' name='first_name' placeholder='First Name')
+                                input#first_name.form-control.input-sm(type='text' name='nombre' placeholder='Nombre')
                         .col-xs-6.col-sm-6.col-md-6
                             .form-group
-                                input#last_name.form-control.input-sm(type='text' name='last_name' placeholder='Last Name')
+                                input#last_name.form-control.input-sm(type='text' name='apellido' placeholder='Apellido')
                     .form-group
-                        input#email.form-control.input-sm(type='email' name='email' placeholder='Email Address')
+                        input#email.form-control.input-sm(type='email' name='email' placeholder='Email')
                     .row
                         .col-xs-6.col-sm-6.col-md-6
                             .form-group
-                                input#password.form-control.input-sm(type='password' name='password' placeholder='Password')
+                                input#password.form-control.input-sm(type='password' name='password' placeholder='Contraseña')
                         .col-xs-6.col-sm-6.col-md-6
                             .form-group
-                                input#password_confirmation.form-control.input-sm(type='password' name='password_confirmation' placeholder='Confirm Password')
-                    input.btn.btn-info.btn-block(type='submit' value='Register')
+                                input#password_confirmation.form-control.input-sm(type='password' name='password_confirmation' placeholder='Confirmar contraseña')
+                    input.btn.btn-info.btn-block(type='submit' value='Registrar')

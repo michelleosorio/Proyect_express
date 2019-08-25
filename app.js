@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(require('./routes/index.js'));
 app.use(require('./routes/registrate.js'));
 app.use(require('./routes/usuario.js'));
+app.use(require('./routes/contactanos.js'));
 
 app.listen(3000, () =>{
     console.log('puerto 3000');

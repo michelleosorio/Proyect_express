@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 //routes
-router.get('/usuario', (req, res) => {
-    res.render('usuario.pug');
+router.get('/contactanos', (req, res) => {
+    res.render('contactanos.pug');
 });
 
 module.exports = router;

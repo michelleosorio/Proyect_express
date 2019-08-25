@@ -12,7 +12,7 @@ block content
             br
             br
             br
-            h2.text-center INICIA SESIÓN!
+            h2.text-center Ingresa tus datos, para que te podamos contactar...!
             .row.justify-content-center
                 .col-12.col-md-8.col-lg-6.pb-5
                     // Form with header
@@ -22,9 +22,16 @@ block content
                                 .bg-info.text-white.text-center.py-2
                                     h3
                                         i.fa.fa-envelope
-                                        |  LOGIN
+                                        |  Contactanos
+                                    p.m-0 Con gusto te ayudaremos
                             .card-body.p-3
                                 // Body
+                                .form-group
+                                    .input-group.mb-2
+                                        .input-group-prepend
+                                            .input-group-text
+                                                i.fa.fa-user.text-info
+                                        input#nombre.form-control(type='text' name='nombre' placeholder='Nombre y Apellido' required='')
                                 .form-group
                                     .input-group.mb-2
                                         .input-group-prepend
@@ -36,18 +43,7 @@ block content
                                         .input-group-prepend
                                             .input-group-text
                                                 i.fa.fa-comment.text-info
-                                        input#nombre.form-control(type='password' name='password' placeholder='contraseña' required='')
+                                        textarea.form-control(placeholder='Envianos tu Mensaje' required='')
                                 .text-center
-                                    input.btn.btn-info.btn-block.rounded-0.py-2(type='submit' value='Login')
-                                    font(style='vertical-align: inherit;')
-                                        font(style='vertical-align: inherit;')
-                                            | &iquest;No tienes una cuenta?
-                                        a(href='#')
-                                            font(style='vertical-align: inherit;')
-                                                font(style='vertical-align: inherit;') Reg&iacute;strate
-                                .d-flex.justify-content-center
-                                    a(href='#')
-                                        font(style='vertical-align: inherit;')
-                                            font(style='vertical-align: inherit;') &iquest;Olvidaste tu contrase&ntilde;a?
-
+                                    input.btn.btn-info.btn-block.rounded-0.py-2(type='submit' value='Enviar')
  

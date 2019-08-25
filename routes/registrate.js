@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 //routes
-router.get('/', (req, res) => {
+router.get('/registrate', (req, res) => {
     res.render('registrate.pug');
 });
 
