@@ -15,6 +15,10 @@ app.use(require('./routes/index.js'));
 app.use(require('./routes/registrate.js'));
 app.use(require('./routes/usuario.js'));
 app.use(require('./routes/contactanos.js'));
+app.use(require('./routes/administrador.js'));
+app.use(require('./routes/xbox1.js'));
+app.use(require('./routes/xbox2.js'));
+app.use(require('./routes/xbox3.js'));
 
 app.listen(3000, () =>{
     console.log('puerto 3000');
