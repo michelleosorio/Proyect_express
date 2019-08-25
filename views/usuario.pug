@@ -1,0 +1,59 @@
+extends layout
+
+block content
+<!DOCTYPE html>
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            title XBOX 360
+
+            form.form-signin
+                img.mb-4(src='/docs/4.3/assets/brand/bootstrap-solid.svg' alt='' width='72' height='72')
+                h1.h3.mb-3.font-weight-normal
+                    font(style='vertical-align: inherit;')
+                        font(style='vertical-align: inherit;') Por favor, registrese
+                label.sr-only(for='inputEmail')
+                    font(style='vertical-align: inherit;')
+                        font(style='vertical-align: inherit;') Direcci&oacute;n de correo electr&oacute;nico
+                input#inputEmail.form-control(type='email' placeholder='Email address' required='' autofocus='')
+                label.sr-only(for='inputPassword')
+                    font(style='vertical-align: inherit;')
+                        font(style='vertical-align: inherit;') Contrase&ntilde;a
+                input#inputPassword.form-control(type='password' placeholder='Password' required='')
+                .checkbox.mb-3
+                    label
+                        input(type='checkbox' value='remember-me')
+                            font(style='vertical-align: inherit;')
+                                font(style='vertical-align: inherit;')
+                                    | Recu&eacute;rdame
+                button.btn.btn-lg.btn-primary.btn-block(type='submit')
+                    font(style='vertical-align: inherit;')
+                        font(style='vertical-align: inherit;') Registrarse
+                p.mt-5.mb-3.text-muted
+                    font(style='vertical-align: inherit;')
+                        font(style='vertical-align: inherit;') &copy; 2017-2019
+            #goog-gt-tt.skiptranslate(dir='ltr')
+                div(style='padding: 8px;')
+                    div
+                        .logo
+                            img(src='https://www.gstatic.com/images/branding/product/1x/translate_24dp.png' width='20' height='20' alt='Google Traductor de Google')
+                .top(style='padding: 8px; float: left; width: 100%;')
+                    h1.title.gray Texto original
+                .middle(style='padding: 8px;')
+                    .original-text
+                .bottom(style='padding: 8px;')
+                    .activity-links
+                        span.activity-link Sugiere una traducci&oacute;n mejor
+                        span.activity-link
+                    .started-activity-container
+                        hr(style='color: #CCC; background-color: #CCC; height: 1px; border: none;')
+                        .activity-root
+                    .status-message(style='display: none;')
+                .goog-te-spinner-pos
+                    .goog-te-spinner-animation
+                        svg.goog-te-spinner(xmlns='http://www.w3.org/2000/svg' width='96px' height='96px' viewbox='0 0 66 66')
+                            circle.goog-te-spinner-path(fill='none' stroke-width='6' stroke-linecap='round' cx='33' cy='33' r='30')
+
+    

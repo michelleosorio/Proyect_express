@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        title XBOX 360
+        link(rel='stylesheet' href='/css/bootstrap.min.css')
+    body
+        header
+            nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-info
+                a.navbar-brand(href='/') 
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarsExampleDefault' aria-controls='navbarsExampleDefault' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarsExampleDefault.collapse.navbar-collapse
+                    ul.navbar-nav.mr-auto
+                        li.nav-item.active
+                            a.nav-link(href='/') Inicio
+                        li.nav-item
+                            a.nav-link(href='/') Registrate
+                        li.nav-item
+                            a.nav-link(href='/') Usuario
+                        li.nav-item
+                            a.nav-link(href='/') Contactanos
+                    form.form-inline.my-2.my-lg-0
+                        input.form-control.mr-sm-2(type='text' placeholder='Buscar' aria-label='Search')
+                        button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Buscar
+        .container
+            block content
+            br
+            footer.container
+                p &copy; 2019 Company, Inc. &middot;
+                    a(href='#') Privacy &middot; 
+                    a(href='#') Terms
+                    br
+                    a(href='#') Back to top
+                p Copyright &copy; 2019
+    
+        script(src='/js/jquery-3.4.1.min.js') 
+        script(src='/js/popper.min.js')  
+        script(src='/js/bootstrap.min.js')
